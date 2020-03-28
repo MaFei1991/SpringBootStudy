@@ -19,6 +19,9 @@
     </properties>
 
     <dependencies>
+        <!--spring-boot-starter ：核心模块，包括自动配置支持、日志和 YAML。-->
+        <!--spring-boot-starter-web：如果引入web模块，则spring-boot-starter去掉，
+        因为Web模块自动依赖spring-boot-starter模块        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,6 +43,19 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--热启动配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <build>
