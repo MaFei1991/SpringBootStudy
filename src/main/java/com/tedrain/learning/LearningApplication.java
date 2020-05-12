@@ -8,6 +8,7 @@ public class LearningApplication {
 
     public static void main(String[] args) {
         System.out.println("Hello,Springboot.");
+        System.out.println();
         SpringApplication.run(LearningApplication.class, args);
     }
 

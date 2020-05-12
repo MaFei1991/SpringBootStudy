@@ -13,6 +13,6 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String sayHello() {
-        return "Hello,SpringBoot!I";
+        return "Hello,SpringBoot!";
     }
 }
